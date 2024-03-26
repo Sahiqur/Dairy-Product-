@@ -1,0 +1,44 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static "app/images/banner/b1.jpg" %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "app/images/banner/b2.jpg" %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static "app/images/banner/b3.jpg" %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static "app/images/banner/b4.jpg" %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+  </div>
+{% endblock banner-slider %}
+{% block main-content %}
+
+
+    <div class="container mt-3">
+        <br>
+        <h2 class="text-center">About Us</h2>
+        <br>
+        <div class="container">
+            <p class="fs-4 text-center">This is a Private Limited Company in Bangladesh and We have created this E-Commerce Website because Most of the people will be able to purchage the actual daily product from this site by minimum prices.So Please everybody can use this site.</p>
+        </div>
+        <br><br>
+        <h2 class="text-center">Mission</h2>
+        <br>
+
+        <div class="container mt-3">
+                <p class="fs-4 text-center">If anyone face any kinds of technical problem ,You can contact with us and You can take help from our help desk.</p>
+                <p class="fs-4 text-center">.....Thank You.....</p>
+        </div>
+    </div>
+    <br><br>
+
+{% endblock main-content %}
